@@ -1,0 +1,71 @@
+/* Put your data in here and query it! */
+CREATE TABLE pokemon(
+  Number     INTEGER,
+  Name       TEXT PRIMARY KEY,
+  Type_1     TEXT,
+  Type_2     TEXT,
+  Total      INTEGER,
+  HP         INTEGER,
+  Attack     INTEGER,
+  Defense    INTEGER,
+  Sp_Atk     INTEGER,
+  Sp_Def     INTEGER,
+  Speed      INTEGER,
+  Generation INTEGER
+);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (1,'Bulbasaur','Grass','Poison',318,45,49,49,65,65,45,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (2,'Ivysaur','Grass','Poison',405,60,62,63,80,80,60,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (3,'Venusaur','Grass','Poison',525,80,82,83,100,100,80,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (4,'Charmander','Fire',Null,309,39,52,43,60,50,65,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (5,'Charmeleon','Fire',Null,405,58,64,58,80,65,80,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (6,'Charizard','Fire','Flying',534,78,84,78,109,85,100,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (7,'Squirtle','Water',Null,314,44,48,65,50,64,43,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (8,'Wartortle','Water',Null,405,59,63,80,65,80,58,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (9,'Blastoise','Water',Null,530,79,83,100,85,105,78,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (10,'Caterpie','Bug',Null,195,45,30,35,20,20,45,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (11,'Metapod','Bug',Null,205,50,20,55,25,25,30,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (12,'Butterfree','Bug','Flying',395,60,45,50,90,80,70,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (13,'Pikachu','Electric',Null,320,35,55,40,50,50,90,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (14,'Raichu','Electric',Null,485,60,90,55,90,80,110,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (15,'Clefairy','Fairy',Null,323,70,45,48,60,65,35,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (16,'Clefable','Fairy',Null,483,95,70,73,95,90,60,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (17,'Vulpix','Fire',Null,299,38,41,40,50,65,65,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (18,'Ninetales','Fire',Null,505,73,76,75,81,100,100,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (19,'Jigglypuff','Normal','Fairy',270,115,45,20,45,25,20,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (20,'Wigglytuff','Normal','Fairy',435,140,70,45,85,50,45,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (21,'Diglett','Ground',Null,265,10,55,25,35,45,95,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (22,'Dugtrio','Ground',Null,405,35,80,50,50,70,120,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (23,'Meowth','Normal',Null,290,40,45,35,40,40,90,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (24,'Persian','Normal',Null,440,65,70,60,65,65,115,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (25,'Psyduck','Water',Null,320,50,52,48,65,50,55,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (26,'Golduck','Water',Null,500,80,82,78,95,80,85,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (27,'Abra','Psychic',Null,310,25,20,15,105,55,90,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (28,'Kadabra','Psychic',Null,400,40,35,30,120,70,105,1);
+INSERT INTO pokemon(Number,Name,Type_1,Type_2,Total,HP,Attack,Defense,Sp_Atk,Sp_Def,Speed,Generation) VALUES (29,'Alakazam','Psychic',Null,500,55,50,45,135,95,120,1);
+
+SELECT COUNT(name) AS Nmbr_pokemon, Type_1, Type_2 FROM pokemon GROUP BY Type_1, Type_2;
+
+SELECT Type_1, ROUND(AVG(Total)) as Avg_total from pokemon
+    GROUP BY Type_1;
+
+SELECT COUNT(*),
+    CASE
+        WHEN Attack > 66 THEN "Strong Attack"
+        WHEN Attack > 33 THEN "Moderate Attack"
+        ELSE "Weak Attack"
+    END as "Attack_Strength"
+FROM pokemon
+GROUP BY Attack_Strength
+ORDER BY Attack;
+
+SELECT COUNT(*),
+    CASE 
+        WHEN Defense > 66 THEN "Strong Defense"
+        WHEN Defense > 33 THEN "Moderate Defense"
+        ELSE "Weak Defense"
+    END as "Defense_Strength"
+FROM pokemon
+GROUP BY Defense_Strength
+ORDER BY Defense;
+
+#Data will be biased because not all Generation I pokemon are included and those included do not contain the same number of evolutions for the same pokemon type

@@ -1,0 +1,55 @@
+CREATE TABLE concerts(
+    id INTEGER PRIMARY KEY,
+    artist TEXT,
+    week_of TEXT,
+    days INTEGER
+    );    
+
+INSERT INTO concerts(artist,week_of,days) VALUES("Tomorrow X Together","5-27",1);
+INSERT INTO concerts(artist,week_of,days) VALUES("Agust D","5-10",3);
+INSERT INTO concerts(artist,week_of,days) VALUES("Agust D","5-16",2);
+INSERT INTO concerts(artist,week_of,days) VALUES("Jackson Wang","4-26",1);
+INSERT INTO concerts(artist,week_of,days) VALUES("Jackson Wang","4-16",2);
+INSERT INTO concerts(artist,week_of,days) VALUES("Stray Kids","3-31",2);
+
+CREATE TABLE location(
+    id INTEGER PRIMARY KEY,
+    venue TEXT,
+    city TEXT
+    );    
+    
+INSERT INTO location(venue,city) VALUES("BMO Stadium","Los Angeles");
+INSERT INTO location(venue,city) VALUES("Kia Forum","Los Angeles");
+INSERT INTO location(venue,city) VALUES("Oakland Arena","Oakland");
+INSERT INTO location(venue,city) VALUES("Shrine Auditorium","Los Angeles");
+INSERT INTO location(venue,city) VALUES("Empire Polo Club","Indio");
+INSERT INTO location(venue,city) VALUES("Banc of California Stadium","Los Angeles");
+    
+CREATE TABLE title(
+    id INTEGER PRIMARY KEY,
+    venue INTEGER,
+    concert_title TEXT
+    );
+    
+INSERT INTO title(venue,concert_title) VALUES(1,"Act:Sweet Mirage");
+INSERT INTO title(venue,concert_title) VALUES(5,"Coachella");
+INSERT INTO title(venue,concert_title) VALUES(4,"Magic Man");
+INSERT INTO title(venue,concert_title) VALUES(6, "Maniac");
+INSERT INTO title(venue,concert_title) VALUES(2,"SUGA | Agust D Tour");
+INSERT INTO title(venue,concert_title) VALUES(3,"SUGA | Agust D Tour");
+
+SELECT * FROM concerts
+    JOIN location
+    WHERE concerts.id = location.id;
+    
+SELECT concerts.artist, SUM(days) AS total_days, concert_title FROM concerts
+    JOIN title
+    ON concerts.id = title.venue
+    GROUP BY artist;
+
+SELECT concerts.artist, title.concert_title, location.venue, location.city FROM location
+    JOIN title
+    ON title.venue = location.id
+    JOIN concerts
+    ON concerts.id = location.id
+    ORDER BY concert_title;
